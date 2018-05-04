@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Exchange :)</ion-title>
+    </ion-navbar>
+
+    <!--DO INCLUDE FILTER CONDITIONS-->
+
+    <ion-toolbar no-border-top>
+            <ion-searchbar color="primary"                          
+                           placeholder="Search">
+            </ion-searchbar>
+          </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+      
+    <ion-list #exchangeList>
+        <ion-item-sliding *ngFor="let item of exchangeItems" #slidingItem >
+            <button ion-item (click) ="openSelectedItem(slidingItem,item)" >
+                <ion-icon name="{{item.image}}" item-left></ion-icon>
+                <h3>{{ item.name }}</h3>
+                 
+            </button>
+            <ion-item-options>
+                <button ion-button color="favorite" (click)="markItemAsFavorite(slidingItem, item)">
+                    Mark as Favorite
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>

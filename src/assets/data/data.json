@@ -1,0 +1,54 @@
+{
+  "items": [
+	{"id": 1,
+	"name": "Iphone Charger",
+	"image": "battery-charging",
+	"categoryId": ["E1"],
+	"categoryName": ["electronics"],
+	"createdDate": "2018-05-17"},
+	
+	{"id": 2,
+	"name": "Base Ball",
+	"image": "baseball",
+	"categoryId": ["C2"],
+	"categoryName": ["sports"],
+	"createdDate": "2018-05-17"},
+
+	{"id": 3,
+	"name": "Basket",
+	"image": "basket",
+	"categoryId": ["P1","H1"],
+	"categoryName": ["personal","household"],
+	"createdDate": "2018-05-17"},
+	
+	{"id": 4,
+	"name": "Bitcoin",
+	"image": "bitcoin",
+	"categoryId": ["B1"],
+	"categoryName": ["cryptocurrency"],
+	"createdDate": "2018-05-17"},
+	
+	{"id": 5,
+	"name": "Clock",
+	"image": "clock",
+	"categoryId": ["E1"],
+	"categoryName": ["electronics"],
+	"createdDate": "2018-05-17"},
+	
+	{"id": 6,
+	"name": "Boat",
+	"image": "boat",
+	"categoryId": ["P1","R1"],
+	"categoryName": ["personal","recreation"],
+	"createdDate": "2018-05-17"},
+	
+	{"id": 7,
+	"name": "Brief Case",
+	"image": "briefcase",
+	"categoryId": ["P1"],
+	"categoryName": ["personal"],
+	"createdDate": "2018-05-17"}
+	
+	]
+}
+
