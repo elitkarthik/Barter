@@ -1,0 +1,61 @@
+<ion-header>
+        <ion-navbar>
+                <button ion-button menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+                <ion-title>Exchange :)</ion-title>
+            </ion-navbar>
+    </ion-header>
+    
+    <ion-content>
+        <ion-slides pager="true">
+            <ion-slide>
+                <img  src="http://www.gstatic.com/webp/gallery/1.jpg"/>
+            </ion-slide>
+            <ion-slide>
+                <img  src="http://www.gstatic.com/webp/gallery/2.jpg"/>
+            </ion-slide>
+            <ion-slide>
+                <img  src="http://www.gstatic.com/webp/gallery/3.jpg"/>
+            </ion-slide>
+            <ion-slide>
+                <img  src="http://www.gstatic.com/webp/gallery/5.jpg"/>
+            </ion-slide>
+        </ion-slides>
+       
+        <div>
+            <button ion-button full round style="background-color:#5ba560" (click)="addOrUploadImage()">
+                <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+                <span style="padding-left: 20px">Add/Upload Images</span>            
+            </button>
+        </div>
+
+        <form (ngSubmit)="saveNewItem()">
+            <!-- <ion-list> -->
+                <ion-item>
+                    <ion-label  color="primary" floating>Name of the Product</ion-label>
+                    <ion-input type="text" [(ngModel)]="newItem.name" name="name"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label  color="primary" floating>Product Category</ion-label>
+                    <ion-select [(ngModel)]="selectedCategories" name="itemcategory" multiple="true">
+                        <ion-option>Personal</ion-option>
+                        <ion-option>Household</ion-option>
+                        <ion-option>Electronics</ion-option>
+                        <ion-option>Furniture</ion-option>
+                        <ion-option>Sports</ion-option>
+                        <ion-option>Accessories</ion-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label  color="primary" >Description</ion-label>
+                    <ion-textarea placeholder="Enter a description" [(ngModel)]="newItem.description" name="description"></ion-textarea>
+                </ion-item>
+            <!-- </ion-list> -->
+
+            <button ion-button type="submit" block>Save and Pick Item for Exchange</button>
+        </form>
+    </ion-content>  
+  
+
+

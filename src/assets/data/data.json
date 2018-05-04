@@ -23,7 +23,7 @@
 	
 	{"id": 4,
 	"name": "Bitcoin",
-	"image": "bitcoin",
+	"image": "logo-bitcoin",
 	"categoryId": ["B1"],
 	"categoryName": ["cryptocurrency"],
 	"createdDate": "2018-05-17"},

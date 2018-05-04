@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -12,15 +13,17 @@ import { HomePage } from '../pages/home/home';
 import { ExchangeService } from '../providers/exchangeservice';
 
 //Custom Components
-import {TabsPage} from '../pages/tabs/tabs';
+import { TabsPage } from '../pages/tabs/tabs';
 import { ListExchangeItem } from '../pages/listexchangeitem/listexchangeitem';
+import { EnlistItem } from '../pages/enlistitem/enlistitem';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     TabsPage,
-    ListExchangeItem
+    ListExchangeItem,
+    EnlistItem
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { ListExchangeItem } from '../pages/listexchangeitem/listexchangeitem';
     MyApp,
     HomePage,    
     TabsPage,
-    ListExchangeItem
+    ListExchangeItem,
+    EnlistItem
   ],
   providers: [
     ExchangeService,
