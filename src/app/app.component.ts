@@ -1,9 +1,13 @@
+import { ListExchangeItem } from './../pages/listexchangeitem/listexchangeitem';
+
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { EnlistItem } from '../pages/enlistitem/enlistitem';
+import { Login } from './../pages/login/login';
 import { TabsPage } from './../pages/tabs/tabs';
 
 @Component({
@@ -25,7 +29,9 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'My First List', component: null }
+      { title: 'Login', component: Login },
+      { title: 'Enlist Item', component: EnlistItem },
+      { title: 'Exchange List', component: ListExchangeItem }
     ];
   }
 
@@ -42,6 +48,6 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    //this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component);
   }
 }

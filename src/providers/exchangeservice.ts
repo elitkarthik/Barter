@@ -18,7 +18,7 @@ export class ExchangeService{
     }
 
     processData(data: Response){
-        debugger;
+        //debugger;
         console.log('data is -' + data.json() );
         return data.json().items as Array<Item>;
     }

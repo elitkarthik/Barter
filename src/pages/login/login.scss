@@ -1,0 +1,32 @@
+pages-login{
+    ion-content {
+        background-image: url('/assets/img/backgroundfullgreen_login.jpg');
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size: 100%;    
+    }
+
+    .vertical-align-content > *
+    {
+        display: flex!important;
+        align-content: center!important;
+        align-items: center!important;
+    }
+
+    .font-style {
+        color: white !important;
+        opacity: 1 !important;
+        font-size: 1.8rem !important;
+    }
+
+    .segmentselectedborder{
+        border-color: white !important;
+    }
+    .segmentnotselectedborder{
+        border-color: #636363 !important;
+    }   
+
+    // .logincolstyle{
+
+    // }
+} 

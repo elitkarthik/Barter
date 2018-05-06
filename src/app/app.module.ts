@@ -16,6 +16,7 @@ import { ExchangeService } from '../providers/exchangeservice';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ListExchangeItem } from '../pages/listexchangeitem/listexchangeitem';
 import { EnlistItem } from '../pages/enlistitem/enlistitem';
+import { Login } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EnlistItem } from '../pages/enlistitem/enlistitem';
     HomePage,
     TabsPage,
     ListExchangeItem,
-    EnlistItem
+    EnlistItem,
+    Login
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import { EnlistItem } from '../pages/enlistitem/enlistitem';
     HomePage,    
     TabsPage,
     ListExchangeItem,
-    EnlistItem
+    EnlistItem,Login
   ],
   providers: [
     ExchangeService,

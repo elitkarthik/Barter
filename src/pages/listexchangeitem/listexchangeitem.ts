@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 
 import { AlertController, App, ItemSliding, ModalController, NavController,
-     ToastController, LoadingController, List } from 'ionic-angular';
+     ToastController, LoadingController, List, Platform } from 'ionic-angular';
 
 import { ExchangeService } from '../../providers/exchangeservice';
 import { Item } from '../../models/item';
@@ -16,7 +16,8 @@ export class ListExchangeItem{
     //hold data returned by REST
     exchangeItems: Array<Item> = [];
 
-    constructor(public exchangeService: ExchangeService, 
+    constructor(public platform: Platform,
+                public exchangeService: ExchangeService, 
                 public alertCtrl: AlertController,
                 public app: App,
                 public loadingCtrl: LoadingController,

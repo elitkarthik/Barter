@@ -2,17 +2,20 @@ import { Component } from '@angular/core';
 import{ Item } from '../../models/item'
 
 import { AlertController } from 'ionic-angular';
+import { BasePage } from './../basepage';
 
 @Component({
     selector:'page-enlistitem',
     templateUrl:'./enlistitem.html'
 })
-export class EnlistItem{
+export class EnlistItem //extends BasePage
+{
+
     newItem: Item = new Item();
     selectedCategories: Array<string>;
 
     constructor(public alertCtrl: AlertController){
-        
+        //super();
     }
 
     saveNewItem(){

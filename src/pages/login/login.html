@@ -1,0 +1,29 @@
+<ion-header>
+        <ion-navbar>
+                <button ion-button menuToggle style="color:green">
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+                <ion-title>Exchange :)</ion-title>
+            </ion-navbar>
+    </ion-header>
+    
+    <ion-content class="vertical-align-content">
+        <ion-grid>
+                <ion-row>
+                        <ion-col class="logincolstyle">
+                                <ion-segment [(ngModel)]="action" (ionChange)="segmentChanged($event)">
+                                <ion-segment-button class="font-style" [ngClass]="{'segmentselectedborder' : segmentLoginSelected, 'segmentnotselectedborder': !segmentLoginSelected }" value="login">
+                                    Login
+                                </ion-segment-button>
+                                <ion-segment-button class="font-style" [ngClass]="{'segmentselectedborder' : segmentRegisterSelected, 'segmentnotselectedborder': !segmentRegisterSelected }" value="register">
+                                    Register
+                                </ion-segment-button>
+                            </ion-segment>
+                            
+                            <ion-label  class="font-style" floating>Email</ion-label>
+                            <ion-input  class="font-style" type="text" name="email"></ion-input>
+                
+                        </ion-col>
+                </ion-row>
+            </ion-grid>
+    </ion-content>  
